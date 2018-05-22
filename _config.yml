@@ -11,12 +11,12 @@ defaults:
   -
     scope:
       path: ""
-      type: "projects"
+      type: projects
     values:
-      layout: "page"
+      layout: page
   -
     scope:
       path: ""
-      type: "services"
+      type: services
     values:
-      layout: "page"
+      layout: page
