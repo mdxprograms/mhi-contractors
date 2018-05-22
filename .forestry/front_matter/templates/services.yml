@@ -18,5 +18,6 @@ fields:
   hidden: false
   default: page
 pages:
+- _services/door-and-window-replacement.md
 - _services/custom-floors.md
 - _services/residential-remodeling.md
