@@ -18,4 +18,5 @@ fields:
   hidden: false
   default: page
 pages:
+- _services/custom-floors.md
 - _services/residential-remodeling.md
