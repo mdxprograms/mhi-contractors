@@ -23,4 +23,5 @@ fields:
   hidden: false
   default: page
 pages:
+- _projects/custom-bathroom.md
 - _projects/custom_kitchen.md
