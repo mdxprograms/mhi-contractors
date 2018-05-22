@@ -1,7 +1,10 @@
 title: MHI Contractors
+intro_text: Welcome. Let's Get to Work
 
 collections:
   projects:
+    output: true
+  services:
     output: true
 
 defaults:
@@ -9,5 +12,11 @@ defaults:
     scope:
       path: ""
       type: "projects"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "services"
     values:
       layout: "page"

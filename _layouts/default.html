@@ -23,11 +23,11 @@
         </div>
         <div class="8u 12u(mobile)">
           <header>
-            <h1>MHI Contractors</h1>
+            <h1>{{ site.title }}</h1>
             <div>
-              <p>intro text goes here</p>
+              <p>{{ site.intro_text }}</p>
             </div>
-            <a class="button medium scrolly" href="#work">page header bottom text here</a>
+            <a class="button medium scrolly" href="#work">Take me to work</a>
           </header>
         </div>
       </div>
@@ -42,19 +42,18 @@
       </header>
       <div class="container">
         <div class="row">
-          {% for service in header.services %}
+          {% for service in site.services %}
           <div class="4u 12u(mobile)">
             <section class="box style1">
-              <span class="icon featured {{ service.icon }}"></span>
-              <h3>{{ service.name }}</h3>
-              <p>{{ service.description }}</p>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.content|markdownify }}</p>
             </section>
           </div>
           {% endfor %}
         </div>
       </div>
       <footer>
-        <a href="#portfolio" class="button medium scrolly">button text here</a>
+        <a href="#portfolio" class="button medium scrolly">View our recent projects</a>
       </footer>
     </article>
   </div>
@@ -80,7 +79,7 @@
         </div>
       </div>
       <footer class="container">
-        <a class="button medium scrolly" href="#contact">button text here</a>
+        <a class="button medium scrolly" href="#contact">Contact us today!</a>
       </footer>
     </article>
   </div>
