@@ -1,0 +1,13 @@
+title: MHI Contractors
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
