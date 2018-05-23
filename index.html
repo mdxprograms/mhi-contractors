@@ -1,3 +1,134 @@
 ---
 layout: default
 ---
+
+<!-- top -->
+<div class="wrapper style1 first">
+  <article id="top" class="container">
+    <div class="row">
+      <div class="4u 12u(mobile)">
+        <span class="image fit">
+          <img alt="logo" src="/uploads/logo.png" />
+        </span>
+      </div>
+      <div class="8u 12u(mobile)">
+        <header>
+          <h1>{{ site.title }}</h1>
+          <div>
+            <p>{{ site.intro_text }}</p>
+          </div>
+          <a class="button medium scrolly" href="#work">Take me to work</a>
+        </header>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- work -->
+<div class="wrapper style2">
+  <article id="work">
+    <header>
+      <h2>Our Work</h2>
+    </header>
+    <div class="container">
+      <div class="row">
+        {% for service in site.services %}
+        <div class="4u 12u(mobile)">
+          <section class="box style1">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.content|markdownify }}</p>
+          </section>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <footer>
+      <a href="#portfolio" class="button medium scrolly">View our recent projects</a>
+    </footer>
+  </article>
+</div>
+
+<!-- portfolio -->
+<div class="wrapper style3">
+  <article id="portfolio">
+    <header>
+      <h2>Here's some of our recent projects</h2>
+    </header>
+    <div class="container">
+      <div class="row">
+        {% for project in site.projects %}
+        <div class="4u 12u(mobile)">
+          <div class="box style3">
+            <h3>
+              {{project.title}}
+            </h3>
+            <img class="12u" alt="image" src="{{ project.images|first }}" />
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <footer class="container">
+      <a class="button medium scrolly" href="#contact">Contact us today!</a>
+    </footer>
+  </article>
+</div>
+
+<!-- contact form -->
+<div class="wrapper style4">
+  <article id="contact" class="container 75%">
+    <header>
+      <h2>Contact Us Today</h2>
+      <p>
+        Quisque non tellus orci, ac auctor augue mauris augue neque, gravida in fermentum et. Rhoncus, urna neque viverra justo, nec ultrices dui sapien eget mi proin sed libero enim, sed.
+      </p>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="9u 12u(mobile)">
+          <form method="post" action="#">
+            <div class="row">
+              <div class="6u 12u(mobile)">
+                <input id="name" name="name" type="text" placeholder="Name" />
+              </div>
+              <div class="6u 12u(mobile)">
+                <input name="email" type="text" id="email" placeholder="Email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <input name="subject" type="text" placeholder="Subject" id="subject" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <ul class="actions">
+                  <li><input type="submit" value="Send Message" /></li>
+                  <li><input type="reset" value="Clear Form" class="alt" /></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <hr />
+                <h3>Find me on...</h3>
+                <ul class="social">
+                  <li>
+                    <a class="icon fa fa-facebook" href="#">
+                      <span class="label">Facebook</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
