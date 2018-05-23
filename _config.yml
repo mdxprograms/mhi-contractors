@@ -1,22 +1,22 @@
-title: MHI Contractors
-intro_text: Welcome. Let's Get to Work
+title:        MHI Contractors
+intro_text:   Welcome. Let's Get to Work
 
 collections:
   projects:
-    output: true
+    output:   true
   services:
-    output: true
+    output:   true
 
 defaults:
   -
     scope:
-      path: ""
-      type: projects
+      path:   ""
+      type:   projects
     values:
-      layout: page
+      layout: default
   -
     scope:
-      path: ""
-      type: services
+      path:   ""
+      type:   services
     values:
-      layout: page
+      layout: default
